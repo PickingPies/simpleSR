@@ -15,7 +15,12 @@ var isGM = false;
 
 //await OBR.party.getPlayers().then((party) =>
 
-await OBR.onReady(() => { start();});
+init();
+
+async function init()
+{
+	await OBR.onReady(() => { start();});
+}
 
 async function start ()
 {
