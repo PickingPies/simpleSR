@@ -284,7 +284,7 @@ function displayResourceRow(resource) {
   var quantity = dictResources[playerName][resource].quantity;
   var consumed = dictResources[playerName][resource].consumed;
   
-  if (quantity < 6)
+  if (quantity < 8)
   {
 	  //finalHTML += '<td><table><tr><td>' + (quantity - consumed) + ' / ' + quantity + '</td></tr></table></td>';
 	  var count = (quantity - consumed);
@@ -396,7 +396,7 @@ function displayFlatResourceRow(playerResources, resource) {
   var quantity = playerResources[resource].quantity;
   var consumed = playerResources[resource].consumed;
   
-  if (quantity < 6)
+  if (quantity < 8)
   {
 	  //finalHTML += '<td><table><tr><td>' + (quantity - consumed) + ' / ' + quantity + '</td></tr></table></td>';
 	  var count = (quantity - consumed);
