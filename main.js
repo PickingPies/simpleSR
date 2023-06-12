@@ -197,7 +197,7 @@ function redrawResources() {
   } 
   else {
     finalHTML += `<div> <table width=100%>`;
-    finalHTML += `<tr><td bgcolor="#80C0B0">  Resource  </td><td bgcolor="#A0E0D0">  Quantity  </td><td bgcolor="#A0E0D0">Reset</td></tr>`;
+    finalHTML += `<tr><td bgcolor="#80C0B0">  Resource  </td><td bgcolor="#A0E0D0" style="white-space: nowrap">  Quantity  </td><td bgcolor="#A0E0D0">Reset</td></tr>`;
     Object.keys(dictResources[playerName]).forEach((resource) =>{
 		var validatedResource = validateIdentifier(resource);
 		console.log("Object found: " + validatedResource);
